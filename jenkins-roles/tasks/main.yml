@@ -1,0 +1,8 @@
+
+# tasks file for jenkins-role
+---
+- include_tasks: install_java.yml
+- include_tasks: jenkins_repokey_repo.yml
+- include_tasks: install_start.yml
+- include_tasks: reading_pass.yml
+

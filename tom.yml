@@ -1,0 +1,8 @@
+---
+- name: procur tomcat 
+  hosts: local
+  tasks:
+    - name: Install tomcat 
+      include_role: 
+        name:  install-tomcat
+  

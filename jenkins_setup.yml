@@ -1,0 +1,7 @@
+---
+- hosts: local
+
+  tasks:
+  - name: INSTALLING JENKINS
+    include_role: 
+      name: jenkins-roles

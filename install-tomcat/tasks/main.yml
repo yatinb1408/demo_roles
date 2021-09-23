@@ -1,0 +1,3 @@
+---
+- name: include tomat file
+  include_tasks: tomcat.yml

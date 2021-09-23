@@ -1,0 +1,7 @@
+---
+
+- name: Reading Admin password
+  shell: cat /var/lib/jenkins/secrets/initialAdminPassword
+  register: jenkins_pwd
+- name: Print password on Screen
+  debug: var=jenkins_pwd.stdout_lines
