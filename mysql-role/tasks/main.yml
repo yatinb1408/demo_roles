@@ -1,0 +1,5 @@
+
+# tasks file for mysql-role
+---
+- include_tasks: install_startmysql.yml
+- include_tasks: mysql_user_and_copy_creds.yml

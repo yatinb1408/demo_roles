@@ -1,0 +1,12 @@
+--- 
+- name: Installing mysql 
+  apt:
+   name: [' libmysqlclient-dev', 'mysql-server', 'mysql-client']
+   state: present
+   update_cache: true
+
+- name: Starting mysql
+  service:
+   name: mysql
+   state: started
+   enabled: yes

@@ -1,0 +1,18 @@
+---
+- name: Create deploy user for mysql
+  mysql_user: 
+   user: "{{ mysqluser }}"
+   host: "localhost"
+   password: "{{ mysqlpass }}"
+   priv: ' *.*:ALL,GRANT '
+   state: present
+   check_implicit_admin: yes
+   login_unix_socket: /var/run/mysqld/mysqld.sock
+  notify: SQL restart 
+
+- name: Copy .my.cnf file with root password credentials
+  template:
+   src: templates/my.cnf.j2
+   dest: /etc/mysql/my.cnf
+   owner: root
+   mode: 0600 
