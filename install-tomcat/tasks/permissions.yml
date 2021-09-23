@@ -1,0 +1,3 @@
+---
+- name: permissions
+  shell: cd /opt/tomcat/apache-tomcat-9.0.52.tar.gz/bin && chmod 777 startup.sh shutdown.sh catalina.sh

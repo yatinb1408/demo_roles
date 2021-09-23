@@ -1,5 +1,5 @@
 ---
-- name: procur tomcat 
+- name: Install tomcat 
   hosts: local
   tasks:
     - name: Install tomcat 

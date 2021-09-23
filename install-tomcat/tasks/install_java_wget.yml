@@ -1,0 +1,7 @@
+---
+- name: install pre req
+  apt:
+     name:
+        - wget
+        - default-jdk
+     state: present

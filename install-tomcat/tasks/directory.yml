@@ -1,0 +1,6 @@
+---
+
+- name: ensuring directory
+  file:
+     name: /opt/tomcat
+     state: directory

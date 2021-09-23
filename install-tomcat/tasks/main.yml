@@ -1,3 +1,7 @@
 ---
-- name: include tomat file
-  include_tasks: tomcat.yml
+- include_tasks: install_java_wget.yml
+- include_tasks: directory.yml
+- include_tasks: download_extract_tomcat.yml
+- include_tasks: permissions.yml
+- include_tasks: download_sample_run_tom.yml
+
