@@ -1,6 +1,0 @@
----
-- name: permissions
-  shell: cd /usr/share/tomcat/apache-tomcat-{{tomcat_ver}}/bin && chmod 777 startup.sh shutdown.sh catalina.sh
-
-- name: start apache tomcat
-  shell: nohup /usr/share/tomcat/apache-tomcat-{{tomcat_ver}}/bin/catalina.sh start

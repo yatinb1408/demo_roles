@@ -1,7 +1,11 @@
 --- 
 - name: Installing mysql 
   apt:
+<<<<<<< HEAD
    name: [' libmysqlclient-dev', 'mysql-server', 'mysql-client','python3-mysqldb']
+=======
+   name: [' libmysqlclient-dev', 'mysql-server', 'mysql-client', 'python3-mysqldb']
+>>>>>>> 4a388dbc17e737069d0955f172e5a47e48a2165f
    state: present
    update_cache: true
 
