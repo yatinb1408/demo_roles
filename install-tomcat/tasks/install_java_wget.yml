@@ -1,7 +1,5 @@
 ---
-- name: install pre req
+- name: Install Default Java (Debian/Ubuntu)
   apt:
-     name:
-        - wget
-        - default-jdk
-     state: present
+    name: ['default-jdk', 'wget']
+    state: present
