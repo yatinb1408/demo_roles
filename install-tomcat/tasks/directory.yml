@@ -1,0 +1,7 @@
+---
+ - name: Create a tomcat directory
+   file:
+     path: /usr/share/tomcat
+     state: directory
+     owner: tomcat
+     group: tomcat

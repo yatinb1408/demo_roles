@@ -1,0 +1,5 @@
+---
+- name: Install Default Java (Debian/Ubuntu)
+  apt:
+    name: ['default-jdk', 'wget']
+    state: present

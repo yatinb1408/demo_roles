@@ -1,0 +1,7 @@
+---
+- include_tasks: install_java_wget.yml
+- include_tasks: tomcat_group_user.yml
+- include_tasks: directory.yml
+- include_tasks: download_extract_tomcat.yml
+- include_tasks: permissions_start.yml
+
