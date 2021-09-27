@@ -1,0 +1,9 @@
+---
+- name: Ensure group "{{ sonar_service_group }}" exists
+  group:
+    name: "{{ sonar_service_group }}"
+    state: present
+- name: Add service user and group for sonar daemon.
+  user:
+    name: "{{ sonar_service_user }}"
+    group: "{{ sonar_service_group }}"
