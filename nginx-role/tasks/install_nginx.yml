@@ -1,0 +1,7 @@
+---
+- name: update repo and install nginx
+  apt: 
+    name=nginx
+    state=latest
+    update_cache=true
+  notify: restart nginx 
