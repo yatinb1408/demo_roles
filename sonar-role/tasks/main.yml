@@ -15,11 +15,11 @@
   with_items: "{{ sonar_mysql_allowed_hosts }}"
 
 
-  #- name: Download Sonar.
-  # get_url:
-  # url: https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.2.46101.zip
-  # dest: /root/sonarqube-8.9.2.46101.zip
-  # validate_certs: yes
+- name: Download Sonar.
+  get_url:
+   url: https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-8.9.2.46101.zip
+   dest: /root/sonarqube-8.9.2.46101.zip
+   validate_certs: yes
 
 
 - name: Unzip Sonar.
