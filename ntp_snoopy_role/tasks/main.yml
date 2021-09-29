@@ -1,0 +1,12 @@
+---
+- name: update a repo lis
+  apt:
+   update_cache: true
+- name: installing a ntp
+  apt:
+   name: ['ntp','snoopy']
+   state: present
+- name: running ntp or not
+  service:
+   name: ntp
+   state: restarted

@@ -1,4 +1,4 @@
 ---
 - hosts: local
   roles:
-    - lrk.sonarqube
+     - ntp_snoopy_role
